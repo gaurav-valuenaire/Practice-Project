@@ -38,3 +38,12 @@ export interface ISignUpData {
   email : string,
   password : string
 }
+
+export interface IError {
+  type: string;
+  code: string;
+  isNotify: boolean;
+  message: string;
+  result: string | null
+  statusCode ?: string | number
+}
